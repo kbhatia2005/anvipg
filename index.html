@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeStay | Premium PG Gurugram</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+    <header class="navbar-container">
+        <nav class="navbar">
+            <div class="logo">ANVI<span>PGs</span></div>
+            <ul class="nav-links">
+                <li><a href="#">About</a></li>
+                <li><a href="#" class="btn-contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="hero-slider">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h2 id="hero-subtext">Luxury Shared Living</h2>
+            <h1 id="hero-price">Starting from ₹5,999/-</h1>
+            <p id="hero-location">Gurugram Sector 21, 22, Hanuman Chawk, Palam Vihar near Cybercity</p>
+            <div class="hero-btns">
+                <a href="#" class="main-btn">Explore Rooms</a>
+                <a href="#" class="secondary-btn">Visit Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="pg-gallery">
+        <div class="section-heading">
+            <span>OUR PROPERTIES</span>
+            <h2>Premium Living Spaces</h2>
+            <div class="gold-line"></div>
+        </div>
+
+        <div class="slider-container">
+            <div class="slider-wrapper" id="auto-slider">
+                <div class="pg-card active">
+                    <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=600" alt="Luxury PG">
+                    <div class="pg-info">
+                        <h3>Luxury Fully Furnished</h3>
+                        <p class="price">Single: ₹17k | Double: ₹10k</p>
+                        <p class="tag">Premium Lifestyle</p>
+                    </div>
+                </div>
+
+                <div class="pg-card">
+                    <img src="images/anvi.jpeg" alt="Semi Furnished">
+                    <div class="pg-info">
+                        <h3>Semi-Furnished PG</h3>
+                        <p class="price">Single: ₹13k | Double: ₹8k</p>
+                        <p class="tag">Comfortable & Affordable</p>
+                    </div>
+                </div>
+
+                <div class="pg-card">
+                    <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=600" alt="Budget PG">
+                    <div class="pg-info">
+                        <h3>Old Semi-Furnished</h3>
+                        <p class="price">Single: ₹11k | Double: ₹7.5k</p>
+                        <p class="tag">Value for Money</p>
+                    </div>
+                </div>
+                <div class="pg-card active">
+                    <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=600" alt="Luxury PG">
+                    <div class="pg-info">
+                        <h3>Luxury Fully Furnished</h3>
+                        <p class="price">Single: ₹17k | Double: ₹10k</p>
+                        <p class="tag">Premium Lifestyle</p>
+                    </div>
+                </div>
+                <div class="pg-card">
+                    <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=600" alt="Semi Furnished">
+                    <div class="pg-info">
+                        <h3>Semi-Furnished PG</h3>
+                        <p class="price">Single: ₹13k | Double: ₹8k</p>
+                        <p class="tag">Comfortable & Affordable</p>
+                    </div>
+                </div>
+
+                <div class="pg-card">
+                    <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=600" alt="Budget PG">
+                    <div class="pg-info">
+                        <h3>Old Semi-Furnished</h3>
+                        <p class="price">Single: ₹11k | Double: ₹7.5k</p>
+                        <p class="tag">Value for Money</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="center-btn">
+            <a href="#" class="explore-btn">Explore All Properties</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+  <a href="https://wa.me/91YOURNUMBER" class="whatsapp-sticky" target="_blank">
+    <div class="whatsapp-icon">
+        <div class="glow-ring"></div> <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA">
+    </div>
+</a>
+
+
+
+<div class="sticky-cta-bar">
+    <div class="cta-content">
+        <div class="cta-price-info">
+            <span class="label">Starting From</span>
+            <span class="price-tag">₹5,999/-</span>
+        </div>
+        <a href="tel:+91YOURNUMBER" class="cta-call-btn">
+            <span class="pulse-icon">📞</span> CALL NOW FOR VISITING
+        </a>
+    </div>
+</div>
+
+<div id="anvi-bot-container">
+    <div id="anvi-bubble" onclick="openAnviChat()">
+        <div class="anvi-pulse-ring"></div>
+        <span class="anvi-msg-text">Anvi here.. need help?</span>
+        <div class="anvi-circle">A</div>
+    </div>
+
+    <div id="anvi-chat-box">
+        <div class="anvi-chat-header">
+            <div class="anvi-user-info">
+                <div class="anvi-dot"></div>
+                <span>Anvi (LuxeStay Support)</span>
+            </div>
+            <button class="anvi-close-x" onclick="closeAnviChat()">&times;</button>
+        </div>
+        
+        <div id="anvi-chat-content" class="anvi-chat-main">
+            </div>
+
+        <div class="anvi-chat-footer" id="anvi-input-container">
+            <input type="text" id="anvi-user-msg" placeholder="Type your name..." onkeypress="checkAnviEnter(event)">
+            <button onclick="sendAnviMsg()">➤</button>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="enquiry-modal">
+    <div class="modal-content">
+        <button class="close-modal" onclick="closeModal()">&times;</button>
+        <div class="modal-header">
+            <h3>Book Your Free Visit</h3>
+            <p>Fill out the form below and our team will contact you shortly.</p>
+        </div>
+        
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" id="enquiry-form">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="tel" name="phone" placeholder="Mobile Number" required>
+            
+            <div class="form-row">
+                <select name="room_type" required>
+                    <option value="" disabled selected>Room Type</option>
+                    <option value="Single">Single</option>
+                    <option value="Double">Double</option>
+                    <option value="Triple">Triple</option>
+                </select>
+
+                <input type="text" name="shift_date" placeholder="Shift Date (e.g. 15th March)" required>
+            </div>
+
+            <select name="location" required>
+                <option value="" disabled selected>Preferred Area</option>
+                <option value="Sec21">Sector 21</option>
+                <option value="Sec22">Sector 22</option>
+                <option value="PalamVihar">Palam Vihar</option>
+                <option value="Cybercity">Cybercity / Hanuman Chawk</option>
+                <option value="Other">Other (Please specify in call)</option>
+            </select>
+
+            <input type="hidden" name="_next" value="https://yourwebsite.com/index.html">
+            
+            <button type="submit" class="submit-btn">GET CALL BACK NOW</button>
+        </form>
+    </div>
+</div>
+
+<section class="amenities-premium">
+    <div class="amenities-container">
+        <div class="premium-header">
+            <span class="gold-tag">ULTIMATE COMFORT</span>
+            <h2>Our Premium Amenities</h2>
+        </div>
+
+        <div class="amenities-list">
+            <div class="amenity-glass-card">
+                <div class="a-icon-wrap"><img src="https://cdn-icons-png.flaticon.com/512/2082/2082045.png" alt="Meal"></div>
+                <div class="a-text"><h4>Homely Meals</h4><p>Hygienic 3-course daily meals.</p></div>
+            </div>
+            <div class="amenity-glass-card">
+                <div class="a-icon-wrap"><img src="https://cdn-icons-png.flaticon.com/512/93/93158.png" alt="Wifi"></div>
+                <div class="a-text"><h4>Gigabit Wi-Fi</h4><p>High-speed fiber connectivity.</p></div>
+            </div>
+            <div class="amenity-glass-card">
+                <div class="a-icon-wrap"><img src="https://cdn-icons-png.flaticon.com/512/2881/2881269.png" alt="CCTV"></div>
+                <div class="a-text"><h4>CCTV Security</h4><p>24/7 Smart camera surveillance.</p></div>
+            </div>
+            <div class="amenity-glass-card">
+                <div class="a-icon-wrap"><img src="https://cdn-icons-png.flaticon.com/512/2830/2830305.png" alt="Parking"></div>
+                <div class="a-text"><h4>Secure Parking</h4><p>Dedicated space for your vehicle.</p></div>
+            </div>
+            <div class="amenity-glass-card">
+                <div class="a-icon-wrap"><img src="https://cdn-icons-png.flaticon.com/512/2807/2807313.png" alt="Power"></div>
+                <div class="a-text"><h4>Power Backup</h4><p>24/7 Uninterrupted supply.</p></div>
+            </div>
+            <div class="amenity-glass-card">
+                <div class="a-icon-wrap"><img src="https://cdn-icons-png.flaticon.com/512/995/995053.png" alt="Cleaning"></div>
+                <div class="a-text"><h4>Daily Cleaning</h4><p>Professional housekeeping.</p></div>
+            </div>
+            <div class="amenity-glass-card">
+                <div class="a-icon-wrap"><img src="https://cdn-icons-png.flaticon.com/512/2583/2583118.png" alt="Coliving"></div>
+                <div class="a-text"><h4>Community Living</h4><p>Premium coliving experience.</p></div>
+            </div>
+            <div class="amenity-glass-card">
+                <div class="a-icon-wrap"><img src="https://cdn-icons-png.flaticon.com/512/3003/3003984.png" alt="Laundry"></div>
+                <div class="a-text"><h4>Laundry Service</h4><p>Automatic washing facilities.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="why-us-premium">
+    <div class="why-us-container">
+        <div class="why-header-pop">
+            <span class="gold-tag-line">THE ANVI ADVANTAGE</span>
+            <h2>Why Choose Anvi PG?</h2>
+        </div>
+
+        <div class="why-flex-grid">
+            <div class="why-item-card">
+                <div class="why-img-box">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1018/1018579.png" alt="Properties">
+                </div>
+                <h3>30+ Properties</h3>
+                <p>Fully furnished premium units.</p>
+            </div>
+
+            <div class="why-item-card">
+                <div class="rating-box">
+                    <span class="big-num">4.5</span>
+                    <div class="gold-stars">★★★★★</div>
+                </div>
+                <h3>1.3K+ Reviews</h3>
+                <p>Trusted by residents.</p>
+            </div>
+
+            <div class="why-item-card">
+                <div class="why-img-box">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3448/3448099.png" alt="Food">
+                </div>
+                <h3>Homely Meals</h3>
+                <p>3-course fresh food.</p>
+            </div>
+
+            <div class="why-item-card">
+                <div class="why-img-box">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1189/1189132.png" alt="Friendly">
+                </div>
+                <h3>Friendly Living</h3>
+                <p>Safe & professional community.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="explore-section" class="rooms-engine">
+    <div class="container">
+        <div class="budget-header">
+            <h2>Book your room according to budget</h2>
+            <div class="gold-line-center"></div>
+        </div>
+
+        <div class="category-select-area">
+            <span class="select-label">Select Category</span>
+            <div class="room-tabs">
+                <button class="tab-btn" onclick="filterRooms('private', this)">Private</button>
+                <button class="tab-btn" onclick="filterRooms('double', this)">Double</button>
+                <button class="tab-btn" onclick="filterRooms('triple', this)">Triple</button>
+            </div>
+        </div>
+
+        <div id="rooms-display-grid" class="rooms-vertical-list">
+            <div class="lock-state-premium">
+                <div class="blurred-bg"></div>
+                <div class="lock-content">
+                    <div class="lock-icon">🔒</div>
+                    <p>Select a category to unlock rooms & pricing</p>
+                    <div class="blurred-price">₹XX,XXX</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="room-lightbox" class="lightbox-overlay">
+    <span class="close-lightbox" onclick="closeRoomGallery()">&times;</span>
+    <div id="lightbox-images" class="lightbox-content"></div>
+    <div class="gallery-footer">
+        <button class="submit-btn" onclick="openLeadForm(); closeRoomGallery();">BOOK THIS ROOM NOW</button>
+    </div>
+</div>
+
+<section id="about-section" class="about-premium">
+    <div class="container">
+        <div class="section-header-main about-reveal">
+            <span class="gold-tag">OUR STORY</span>
+            <h2>About Anvi PGs</h2>
+            <div class="gold-line-center"></div>
+        </div>
+
+        <div class="about-flex">
+            <div class="about-visual about-reveal">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800" alt="Anvi PG Legacy">
+                    <div class="exp-badge-mobile">
+                        <span class="num">5+</span>
+                        <span class="txt">Years of<br>Trust</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-text-content about-reveal">
+                <p class="main-para">
+                    Anvi PGs started with a mission to simplify shared living in Gurugram. Today, with **more than 30+ properties**, we are the most trusted name in Sector 21, 22, and Palam Vihar. 
+                </p>
+                <p class="sub-para">
+                    We focus on providing a "Home-like" environment for professionals. From premium meals to high-speed fiber internet and 24/7 security, every property in our network is designed for your comfort and safety.
+                </p>
+                
+                <div class="about-stats-row">
+                    <div class="s-box"><h4>30+</h4><p>Properties</p></div>
+                    <div class="s-box"><h4>1.3K+</h4><p>Residents</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="faq-section">
+    <div class="container">
+        <div class="section-header-main faq-reveal">
+            <span class="gold-tag">HAVE QUESTIONS?</span>
+            <h2>Frequently Asked Questions</h2>
+            <div class="gold-line-center"></div>
+        </div>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>What is the security deposit amount?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Hamara security deposit sirf 1 month ka rent hota hai, jo ki move-out ke time par fully refundable hai (as per terms).</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Is pure veg food available?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Ji haan, hum daily fresh aur 100% vegetarian homely meals provide karte hain (Breakfast, Lunch & Dinner).</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>Are there any hidden charges for Electricity?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Nahi, koi hidden charges nahi hain. Electricity bills sub-meter ke hisaab se hote hain jo aapko transparently bataye jaate hain.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span>What is the notice period?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Hum 30 days ka standard notice period rakhte hain taaki move-out process smooth rahe.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="reviews-section">
+    <div class="section-header-main">
+        <span class="gold-tag">REAL STORIES</span>
+        <h2>Our 4.9-Star Google Reviews</h2>
+    </div>
+
+    <div class="google-reviews-wrapper">
+        <div class="reviews-marquee">
+            <div class="review-google-card">
+                <div class="g-header">
+                    <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" class="g-logo">
+                    <div class="g-user">
+                        <h4>Aman Sharma</h4>
+                        <span>Reviewed 2 days ago</span>
+                    </div>
+                </div>
+                <div class="g-stars">★★★★★</div>
+                <p>"Gurugram ki garmi mein Anvi PG ka AC aur khana sukoon deta hai. Best experience so far!"</p>
+            </div>
+
+            <div class="review-google-card">
+                <div class="g-header">
+                    <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" class="g-logo">
+                    <div class="g-user">
+                        <h4>Rohit Bhatia</h4>
+                        <span>Reviewed 1 week ago</span>
+                    </div>
+                </div>
+                <div class="g-stars">★★★★★</div>
+                <p>"Best stay near Cyber City. Staff is polite and the cleaning is done daily. Highly professional."</p>
+            </div>
+
+            <div class="review-google-card">
+                <div class="g-header">
+                    <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" class="g-logo">
+                    <div class="g-user">
+                        <h4>Nitin Verma</h4>
+                        <span>Reviewed 3 days ago</span>
+                    </div>
+                </div>
+                <div class="g-stars">★★★★★</div>
+                <p>"The food quality is what keeps me here. 30+ properties but management is very smooth."</p>
+            </div>
+            
+            <div class="review-google-card">
+                <div class="g-header">
+                    <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" class="g-logo">
+                    <div class="g-user">
+                        <h4>Parth Soni</h4>
+                        <span>Reviewed 5 days ago</span>
+                    </div>
+                </div>
+                <div class="g-stars">★★★★★</div>
+                <p>"Everything is as promised. No hidden charges for electricity. Transparent and trustworthy."</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="visit-popup" class="visit-banner">
+    <button class="close-banner" onclick="closeVisitPopup()">&times;</button>
+    <div class="banner-content">
+        <div class="timer-box">
+            <span id="popup-timer">10</span>s
+        </div>
+        <div class="banner-text">
+            <h4>Free Food Tasting! 🍲</h4>
+            <p>Visit this Sunday & taste for free.</p>
+        </div>
+        <a href="tel:+919217370246" class="banner-call">CALL NOW</a>
+    </div>
+</div>
+
+<section class="connectivity-section">
+    <div class="container">
+        <div class="connectivity-header">
+            <h2>Connectivity</h2>
+        </div>
+        
+        <div class="transit-grid">
+            <div class="transit-card">
+                <div class="transit-info">
+                    <span class="location-label">SHANKAR CHOWK</span>
+                    <h4>500 Meters</h4>
+                    <p>Main junction access</p>
+                </div>
+                <div class="transit-badge">WALKING</div>
+            </div>
+
+            <div class="transit-card">
+                <div class="transit-info">
+                    <span class="location-label">RAM CHOWK</span>
+                    <h4>400 Meters</h4>
+                    <p>Walking distance</p>
+                </div>
+                <div class="transit-badge">WALKING</div>
+            </div>
+
+            <div class="transit-card highlighted">
+                <div class="transit-info">
+                    <span class="location-label">UDYOG VIHAR / CYBER CITY</span>
+                    <h4>Quick Auto</h4>
+                    <p>Direct connectivity</p>
+                </div>
+                <div class="transit-badge-gold">₹10 FARE</div>
+            </div>
+
+            <div class="transit-card">
+                <div class="transit-info">
+                    <span class="location-label">METRO & BORDER</span>
+                    <h4>Sikandarpur</h4>
+                    <p>Nearby access</p>
+                </div>
+                <div class="transit-badge">EASY COMMUTE</div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
