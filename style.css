@@ -1014,8 +1014,8 @@ body {
 }
 
 .faq-section {
-    padding: 60px 5%;
-    background: #f8fafc; /* Light greyish background to separate sections */
+    padding: 40px 5%; /* Padding thodi kam ki hai connectivity ke baad */
+    background: #f8fafc; 
 }
 
 .faq-container {
@@ -1027,20 +1027,22 @@ body {
     background: #fff;
     margin-bottom: 15px;
     border-radius: 10px;
-    border: 1px solid #eee;
+    border: 1px solid #e2e8f0; /* Thoda darker border for definition */
     overflow: hidden;
     transition: 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02); /* Halka sa shadow clarity ke liye */
 }
 
+/* Question Section - Now Pure Black */
 .faq-question {
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    font-weight: 700;
-    color: #0f172a;
-    font-size: 15px;
+    font-weight: 800; /* Extra bold for black look */
+    color: #000000 !important; /* Pure Black */
+    font-size: 16px; /* 1px size badhaya hai visibility ke liye */
     transition: 0.3s;
 }
 
@@ -1061,11 +1063,19 @@ body {
     background: #fff;
 }
 
+/* Answer Section - Now Deep Black */
 .faq-answer p {
     padding: 0 20px 20px;
-    color: #64748b;
-    font-size: 14px;
+    color: #000000 !important; /* Pure Black */
+    font-size: 14.5px;
     line-height: 1.6;
+    font-weight: 500; /* Medium weight for readability */
+}
+
+/* Section Heading Fix */
+.section-header-main.faq-reveal h2 {
+    color: #000000 !important;
+    font-weight: 800;
 }
 
 /* Active State */
@@ -1388,3 +1398,248 @@ body {
         font-size: 11px;
     }
 }
+
+.video-tour-section {
+    padding: 40px 5%;
+    background: #fcfcfc;
+}
+
+.video-layout {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-frame {
+    flex: 1.2;
+    aspect-ratio: 16/9;
+    background: #000;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border: 2px solid #c5a059;
+}
+
+.video-frame iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.video-text {
+    flex: 0.8;
+}
+
+.video-text h3 {
+    font-size: 24px;
+    color: #0f172a;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.video-text p {
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.video-points {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.video-points li {
+    font-size: 14px;
+    color: #0f172a;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+    .video-layout {
+        flex-direction: column;
+        text-align: center;
+    }
+    .video-points li {
+        text-align: left;
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
+
+.main-footer {
+    background: #0f172a;
+    color: #ffffff;
+    padding-top: 50px;
+    margin-bottom: 0 !important; /* Bottom gap khatam */
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5% 40px;
+}
+
+.footer-col h4 {
+    color: #c5a059;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.icon-circle {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    color: #fff;
+    font-weight: 800;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.social-icon.wa:hover .icon-circle { background: #25d366; border-color: #25d366; }
+.social-icon.ig:hover .icon-circle { background: #E1306C; border-color: #E1306C; }
+.social-icon.ml:hover .icon-circle { background: #ea4335; border-color: #ea4335; }
+
+.footer-links { list-style: none; padding: 0; }
+.footer-links li { margin-bottom: 10px; }
+.footer-links a { 
+    color: #94a3b8; 
+    text-decoration: none; 
+    font-size: 14px; 
+    transition: 0.3s;
+}
+.footer-links a:hover { color: #c5a059; padding-left: 5px; }
+
+.footer-bottom {
+    background: #0a1120;
+    padding: 20px 5%;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    margin-bottom: 0 !important; /* Bottom gap khatam */
+}
+
+.footer-bottom-flex {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #64748b;.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.icon-circle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+/* Social Hover Colors */
+.social-icon.ig:hover .icon-circle { background: #E1306C; border-color: #E1306C; }
+.social-icon.fb:hover .icon-circle { background: #1877F2; border-color: #1877F2; }
+.social-icon.ml:hover .icon-circle { background: #ea4335; border-color: #ea4335; }
+
+.contact-info a:hover {
+    color: #c5a059 !important;
+    text-decoration: underline !important;
+}
+
+.main-footer {
+    margin-bottom: 0 !important;
+}
+
+.footer-bottom {
+    margin-bottom: 0 !important;
+}
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .footer-bottom-flex { flex-direction: column; text-align: center; gap: 10px; }
+    .main-footer { padding-bottom: 70px; } /* Sirf sticky bar ke liye space */
+}
+
+/* Official PNG Logos Styling */
+.social-logos-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-img-link img {
+    width: 35px; /* Perfect size for footer icons */
+    height: 35px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+.social-img-link:hover img {
+    transform: scale(1.15);
+}
+
+/* Map Preview Box */
+.map-box {
+    display: block;
+    margin-top: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(197, 160, 89, 0.5);
+    transition: 0.3s;
+}
+
+.map-placeholder {
+    height: 100px;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                url('https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=400');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-placeholder span {
+    color: white;
+    font-weight: 700;
+    font-size: 11px;
+    background: #c5a059;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* Final Layout Cleanup */
+.main-footer { background: #0f172a; padding-top: 50px; margin-bottom: 0 !important; }
+.footer-bottom { background: #0a1120; padding: 20px 0; margin-bottom: 0 !important; }
+

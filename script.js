@@ -155,7 +155,7 @@ function botLogic(input) {
         botSay("We provide PG in Gurugram Sector 20, 21, Shankar Chawk, Hanuman Chawk, Cybercity near Palam Vihar.");
         setTimeout(() => botSay("Aap visit kab kroge?"), 1000);
     } else if(chatStep === 3) {
-        botSay("Okay! main help krta hu aapki. Aap is number (981XXXXXXX) par apni location bhejo, nearest PG ki location aa jayegi.");
+        botSay("Okay! main help krta hu aapki. Aap is number +918750231103 par apni location bhejo, nearest PG ki location aa jayegi.");
         setTimeout(() => {
             botSay("Location lekar visit kr lo! 😊");
             document.getElementById('anvi-input-container').style.display = 'none';

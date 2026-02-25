@@ -10,15 +10,15 @@
 </head>
 <body>
 
-    <header class="navbar-container">
-        <nav class="navbar">
-            <div class="logo">ANVI<span>PGs</span></div>
-            <ul class="nav-links">
-                <li><a href="#">About</a></li>
-                <li><a href="#" class="btn-contact">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+   <header class="navbar-container">
+    <nav class="navbar">
+        <div class="logo">ANVI<span>PGs</span></div>
+        <ul class="nav-links">
+            <li><a href="#about-section">About</a></li>
+            <li><a href="tel:+918750231103" class="btn-contact">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
 
     <section class="hero" id="hero-slider">
         <div class="overlay"></div>
@@ -26,84 +26,90 @@
             <h2 id="hero-subtext">Luxury Shared Living</h2>
             <h1 id="hero-price">Starting from ₹5,999/-</h1>
             <p id="hero-location">Gurugram Sector 21, 22, Hanuman Chawk, Palam Vihar near Cybercity</p>
-            <div class="hero-btns">
-                <a href="#" class="main-btn">Explore Rooms</a>
-                <a href="#" class="secondary-btn">Visit Now</a>
-            </div>
+           <div class="hero-btns">
+    <a href="#explore-section" class="main-btn">Explore Rooms</a>
+    
+    <a href="javascript:void(0)" class="secondary-btn" onclick="openLeadForm()">Visit Now</a>
+</div>
         </div>
     </section>
 
-    <section class="pg-gallery">
-        <div class="section-heading">
-            <span>OUR PROPERTIES</span>
-            <h2>Premium Living Spaces</h2>
-            <div class="gold-line"></div>
-        </div>
+    
+        <section class="pg-gallery">
+    <div class="section-heading">
+        <span>OUR PROPERTIES</span>
+        <h2>Premium Living Spaces</h2>
+        <div class="gold-line"></div>
+    </div>
 
-        <div class="slider-container">
-            <div class="slider-wrapper" id="auto-slider">
-                <div class="pg-card active">
-                    <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=600" alt="Luxury PG">
-                    <div class="pg-info">
-                        <h3>Luxury Fully Furnished</h3>
-                        <p class="price">Single: ₹17k | Double: ₹10k</p>
-                        <p class="tag">Premium Lifestyle</p>
-                    </div>
-                </div>
-
-                <div class="pg-card">
-                    <img src="images/anvi.jpeg" alt="Semi Furnished">
-                    <div class="pg-info">
-                        <h3>Semi-Furnished PG</h3>
-                        <p class="price">Single: ₹13k | Double: ₹8k</p>
-                        <p class="tag">Comfortable & Affordable</p>
-                    </div>
-                </div>
-
-                <div class="pg-card">
-                    <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=600" alt="Budget PG">
-                    <div class="pg-info">
-                        <h3>Old Semi-Furnished</h3>
-                        <p class="price">Single: ₹11k | Double: ₹7.5k</p>
-                        <p class="tag">Value for Money</p>
-                    </div>
-                </div>
-                <div class="pg-card active">
-                    <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=600" alt="Luxury PG">
-                    <div class="pg-info">
-                        <h3>Luxury Fully Furnished</h3>
-                        <p class="price">Single: ₹17k | Double: ₹10k</p>
-                        <p class="tag">Premium Lifestyle</p>
-                    </div>
-                </div>
-                <div class="pg-card">
-                    <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=600" alt="Semi Furnished">
-                    <div class="pg-info">
-                        <h3>Semi-Furnished PG</h3>
-                        <p class="price">Single: ₹13k | Double: ₹8k</p>
-                        <p class="tag">Comfortable & Affordable</p>
-                    </div>
-                </div>
-
-                <div class="pg-card">
-                    <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=600" alt="Budget PG">
-                    <div class="pg-info">
-                        <h3>Old Semi-Furnished</h3>
-                        <p class="price">Single: ₹11k | Double: ₹7.5k</p>
-                        <p class="tag">Value for Money</p>
-                    </div>
+    <div class="slider-container">
+        <div class="slider-wrapper" id="auto-slider" onclick="location.href='#explore-section'" style="cursor: pointer;">
+            
+            <div class="pg-card active">
+                <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=600" alt="Luxury PG">
+                <div class="pg-info">
+                    <h3>Luxury Fully Furnished</h3>
+                    <p class="price">Single: ₹17k | Double: ₹10k</p>
+                    <p class="tag">Premium Lifestyle</p>
                 </div>
             </div>
+
+            <div class="pg-card">
+                <img src="images/anvi.jpeg" alt="Semi Furnished">
+                <div class="pg-info">
+                    <h3>Semi-Furnished PG</h3>
+                    <p class="price">Single: ₹13k | Double: ₹8k</p>
+                    <p class="tag">Comfortable & Affordable</p>
+                </div>
+            </div>
+
+            <div class="pg-card">
+                <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=600" alt="Budget PG">
+                <div class="pg-info">
+                    <h3>Old Semi-Furnished</h3>
+                    <p class="price">Single: ₹11k | Double: ₹7.5k</p>
+                    <p class="tag">Value for Money</p>
+                </div>
+            </div>
+
+            <div class="pg-card">
+                <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=600" alt="Luxury PG">
+                <div class="pg-info">
+                    <h3>Luxury Fully Furnished</h3>
+                    <p class="price">Single: ₹17k | Double: ₹10k</p>
+                    <p class="tag">Premium Lifestyle</p>
+                </div>
+            </div>
+
+            <div class="pg-card">
+                <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=600" alt="Semi Furnished">
+                <div class="pg-info">
+                    <h3>Semi-Furnished PG</h3>
+                    <p class="price">Single: ₹13k | Double: ₹8k</p>
+                    <p class="tag">Comfortable & Affordable</p>
+                </div>
+            </div>
+
+            <div class="pg-card">
+                <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=600" alt="Budget PG">
+                <div class="pg-info">
+                    <h3>Old Semi-Furnished</h3>
+                    <p class="price">Single: ₹11k | Double: ₹7.5k</p>
+                    <p class="tag">Value for Money</p>
+                </div>
+            </div>
+
         </div>
-        
+    </div>
+</section>
         <div class="center-btn">
-            <a href="#" class="explore-btn">Explore All Properties</a>
+            <a href="#explore-section" class="explore-btn">Explore All Properties</a>
         </div>
     </section>
 
     <script src="script.js"></script>
 
-  <a href="https://wa.me/91YOURNUMBER" class="whatsapp-sticky" target="_blank">
+  <a href="https://wa.me/8750231103" class="whatsapp-sticky" target="_blank">
     <div class="whatsapp-icon">
         <div class="glow-ring"></div> <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA">
     </div>
@@ -111,17 +117,7 @@
 
 
 
-<div class="sticky-cta-bar">
-    <div class="cta-content">
-        <div class="cta-price-info">
-            <span class="label">Starting From</span>
-            <span class="price-tag">₹5,999/-</span>
-        </div>
-        <a href="tel:+91YOURNUMBER" class="cta-call-btn">
-            <span class="pulse-icon">📞</span> CALL NOW FOR VISITING
-        </a>
-    </div>
-</div>
+
 
 <div id="anvi-bot-container">
     <div id="anvi-bubble" onclick="openAnviChat()">
@@ -472,9 +468,42 @@
             <h4>Free Food Tasting! 🍲</h4>
             <p>Visit this Sunday & taste for free.</p>
         </div>
-        <a href="tel:+919217370246" class="banner-call">CALL NOW</a>
+        <a href="tel:+918750231103" class="banner-call">CALL NOW</a>
     </div>
 </div>
+
+<section class="video-tour-section">
+    <div class="container">
+        <div class="section-header-main">
+            <span class="gold-tag">WATCH THE TOUR</span>
+            <h2>Life at Anvi PGs</h2>
+            <div class="gold-line-center"></div>
+        </div>
+
+        <div class="video-layout">
+            <div class="video-frame">
+                <iframe 
+                    src="https://www.youtube.com/embed/fbXQwmjsC84?si=qOePc8aQZ9cev1st" 
+                    title="Anvi PG Video Tour" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            
+            <div class="video-text">
+                <h3>Take a Virtual Walkthrough 🏠</h3>
+                <p>Dekhiye humare premium rooms, hygiene standards aur world-class amenities ko ek saath. Hum jo dikhate hain, wahi dete hain.</p>
+                <ul class="video-points">
+                    <li>✅ Real Room Footage</li>
+                    <li>✅ Home-style Kitchen Tour</li>
+                    <li>✅ Safety & Security View</li>
+                </ul>
+                <a href="#explore-section" class="main-btn">Book Your Visit</a>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="connectivity-section">
     <div class="container">
@@ -521,5 +550,70 @@
         </div>
     </div>
 </section>
+
+<div class="sticky-cta-bar">
+    <div class="cta-content">
+        <div class="cta-price-info">
+            <span class="label">Starting From</span>
+            <span class="price-tag">₹5,999/-</span>
+        </div>
+        <a href="tel:+91875023103" class="cta-call-btn">
+            <span class="pulse-icon">📞</span> CALL NOW FOR VISITING
+        </a>
+    </div>
+</div>
 </body>
+<footer class="main-footer">
+    <div class="footer-top">
+        <div class="footer-container">
+            <div class="footer-col brand-col">
+                <div class="logo">ANVI<span>PGs</span></div>
+                <p>Gurugram's most trusted premium PG network. Comfort, security, and home-style food in the heart of Sector 20.</p>
+                
+                <div class="social-logos-container">
+                    <a href="https://wa.me/8750231103" target="_blank" class="social-img-link">
+                        <img src="images/wts.png"  alt="WhatsApp">
+                    </a>
+                    <a href="https://www.instagram.com/anvipgs_gurugram/" target="_blank" class="social-img-link">
+                        <img src="images/insta.png" alt="Instagram">
+                    </a>
+                    <a href="rahuldhankhar4@gmail.com" class="social-img-link">
+                        <img src="images/email.png"  alt="Gmail">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#about-section">About Us</a></li>
+                    <li><a href="#explore-section">Explore Rooms</a></li>
+                    <li><a href="#reviewTrack">Reviews</a></li>
+                    <li><a href="#faq-section">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Find Us</h4>
+                <div class="contact-info">
+                    <p>📍 Sector 20, Near Vijay Sales, Gurugram</p>
+                    <a href="https://maps.app.goo.gl/u6P9p8X9yUqYp9U99" target="_blank" class="map-box">
+                        <div class="map-placeholder">
+                            <span>Open Google Maps</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-bottom-flex">
+            <p>© 2026 Anvi PGs. All Rights Reserved.</p>
+            <p>Powered by <strong>Nelka Digital Agency</strong></p>
+        </div>
+    </div>
+</footer>
+
+
 </html>
